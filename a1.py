@@ -1,16 +1,16 @@
-import random #importing module
-playing = True #initialise
-number = str(random.randint(0,9)) #random in-bulit function
+empty_list = []
+print()
 
-print("I will generate a number from 0 to 9, and you have to guesss the number one digit at a time.")
-print("The game ends when you get 1 hero!")
-#iterate loop till the condition is true
-while playing:
-    guess = input("Give me your best guess! \n")
-    if number == guess:
-        print ("you win the game")
-        print("The number was",number)
-        break
-    
-    else:
-        print("Your guess is'nt quite right, try again. \n")
+
+numbers = [1, 2, 3, 4, 5]
+print(numbers)
+
+
+
+triples = [1, 2, 3] * 3
+print(triples)
+
+
+aList = [100, 200, 300, 400, 500]
+aList = aList[::-1]
+print(aList,"\n")

@@ -1,13 +1,23 @@
-import math 
+L = [4, 5, 1, 2, 9, 7, 10, 8]
+print("original List :", L)
 
-print('The floor and ceiling value of 23.56 are: ' + str(math.ceil(23.56)) + ', ' + str(math.floor(23.56)))
+# variable to store the sum of
+# the list
+count = 0
 
-x = 10
-y = -15
+# Finding the sum
+for i in L:
+    count += i
+   
+# divide the total elements by
+# number of elements
+avg = count/len(L)
 
-print(' The value of x after copying the sign from y is: ' + str(math.copysign(x,y)))
+print("sum =", count)
+print("average = ", avg)
 
+# sorting the first element
+print("Smallest element is:", L[0])
 
-print('Absolute value of -96 and 56 are: ' + str(math.fabs(-96)) + ', ' + str(math.fabs(56)))
-
-print('The GCD of 24 and 56 : ' + str(math.gcd(24, 56)))
+# printing the last element
+print("Largest elemnt is:", L[-1]) 
